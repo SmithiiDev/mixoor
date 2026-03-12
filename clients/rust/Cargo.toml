@@ -1,0 +1,33 @@
+[package]
+name = "smithii-mixoor-client"
+version = "0.0.0"
+description = "A generated Rust library for the Mixoor program"
+repository = "https://github.com/smithii/mixoor"
+edition = "2021"
+readme = "README.md"
+license-file = "../../LICENSE"
+
+[features]
+anchor = ["dep:anchor-lang"]
+test-sbf = []
+serde = ["dep:serde", "dep:serde_with"]
+
+[dependencies]
+anchor-lang = { version = "0.32.1", optional = true }
+borsh = "1.5.7"
+num-derive = "^0.3"
+num-traits = "^0.2"
+serde = { version = "^1.0", features = ["derive"], optional = true }
+serde_with = { version = "^3.0", optional = true }
+solana-account-info = "3.1.0"
+solana-cpi = "3.1.0"
+solana-instruction = "3.1.0"
+solana-program = "~2.3"
+solana-program-error = "3.0.0"
+solana-pubkey = "4.0.0"
+thiserror = "^1.0"
+
+[dev-dependencies]
+assert_matches = "1.5.0"
+solana-program-test = "~2.3"
+solana-sdk = "~2.3"

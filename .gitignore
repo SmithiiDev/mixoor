@@ -1,0 +1,30 @@
+.anchor
+.cargo
+.DS_Store
+**/.DS_Store
+**/target
+**/*.rs.bk
+node_modules
+test-ledger
+dist
+
+# Circuit build artifacts (large files, should be regenerated)
+circuits/build/
+circuits/transaction_js/
+circuits/*.r1cs
+circuits/*.sym
+circuits/*.wasm
+circuits/*.wtns
+circuits/verifier.sol
+
+# ⚠️ SECURITY CRITICAL: NEVER commit these (can generate fake proofs)
+circuits/*.zkey
+circuits/*.ptau
+
+# Safe to commit (public verification key derived from zkey)
+# circuits/verification_key.json - Keep this!
+
+# Keep these source files:
+# circuits/transaction.circom (source)
+# circuits/generate_keys.sh (build script)
+# circuits/circomlib/ (library)

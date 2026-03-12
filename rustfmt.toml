@@ -1,0 +1,11 @@
+max_width = 100
+reorder_imports = true
+reorder_modules = true
+tab_spaces = 2
+
+# == Nightly only. ==
+# imports_indent = "Block"
+# imports_layout = "Mixed"
+# imports_granularity = "Crate"
+# group_imports = "Preserve"
+# reorder_impl_items = false
